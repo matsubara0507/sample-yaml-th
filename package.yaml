@@ -13,6 +13,7 @@ description:         Please see the README on GitHub at <https://github.com/mats
 
 dependencies:
 - base >= 4.7 && < 5
+- rio
 - extensible
 - template-haskell
 - yaml
@@ -21,3 +22,10 @@ library:
   source-dirs: src
   other-modules:
   - Sample.Config.Internal
+
+executables:
+  pconfig:
+    main:            Main.hs
+    source-dirs:     app
+    dependencies:
+    - sample-yaml-th
