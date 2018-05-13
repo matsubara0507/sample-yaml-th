@@ -4,9 +4,9 @@
 
 module Sample.Config.Internal where
 
-import qualified Data.Yaml.TH             as Y
+import qualified Data.Yaml.TH               as Y
 import           GHC.Generics
-import           Language.Haskell.TH.Lift
+import           Language.Haskell.TH.Syntax
 
 data Config = Config
   { columns            :: Int
